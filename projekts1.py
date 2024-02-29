@@ -1,5 +1,4 @@
 from sympy import *
-from sympy import symbols, solve, Symbol, NumberSymbol
 from sympy.abc import s, v,t, a
 v0 = symbols('v0')
 
