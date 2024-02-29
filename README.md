@@ -1,1 +1,3 @@
-# eq_solver_project
+# eq_solver
+
+### Sympy ir vajadzīgs, lai strādātu!
