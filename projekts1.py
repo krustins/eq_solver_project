@@ -8,7 +8,7 @@ functions = {"1": v*t-s, "2": v0**2-v**2-2*a*s  }
 result_var = input("Enter the variable that you need in the result:")
 formula = solve(functions.get(function), result_var)
 print(f'{result_var} = {formula}')
-'''print(f"{result_var}  = {formula}")
+'''
 form = formula[0].atoms(Symbol, NumberSymbol)
 vertibas = {}
 for i in form:
