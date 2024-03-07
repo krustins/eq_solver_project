@@ -17,7 +17,7 @@ Problēma funkcijā ir tāda, ka 'subs' strādā tikai ar 'class sympy.core.add.
 Pašlaik ievietotā funkcija strādā, taču to nebūtu vēlams darīt katrai pieejamajai formulai, bet ar šeit minēto funkciju būtu iespējams vienkāršā veidā jebkuru formulu aprēķināt.
 
 Darba plāns līdz 4.aprīlim:
-Salabot iepriekšminēto funkciju. ;
+Salabot iepriekšminēto funkciju. Problēma ir tā, ka formula, kur mainīgais ir izteikts no lietotāja izvēlētās formulas, ir 'list' tips, bet 'subs' nestrādā ar list tipu. ;
 Programmas sākumā pie iespējamajām funkcijām pievienot vēl citas funkcijas;
 Nedaudz izmainīt kodu, lai tas būtu vieglāk lasāms, sadalot programmu 2 funkcijās : mainīgā iznešana no formulas un vērtības aprēķināšana;
 Uzzināt vairāk par GUI.
