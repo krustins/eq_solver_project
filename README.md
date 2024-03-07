@@ -16,6 +16,13 @@ for i in form:
 Problēma funkcijā ir tāda, ka 'subs' strādā tikai ar 'class sympy.core.add.Add' tipa mainīgajiem, taču formula ir 'list' tipa mainīgais un nevaru atrast veidu, kā pārveidot 'list' uz 'class sympy.core.add.Add'.
 Pašlaik ievietotā funkcija strādā, taču to nebūtu vēlams darīt katrai pieejamajai formulai, bet ar šeit minēto funkciju būtu iespējams vienkāršā veidā jebkuru formulu aprēķināt.
 
+Darba plāns līdz 4.aprīlim:
+Salabot iepriekšminēto funkciju. ;
+Programmas sākumā pie iespējamajām funkcijām pievienot vēl citas funkcijas;
+Nedaudz izmainīt kodu, lai tas būtu vieglāk lasāms, sadalot programmu 2 funkcijās : mainīgā iznešana no formulas un vērtības aprēķināšana;
+Uzzināt vairāk par GUI.
+Izstrādāt dizainu, lai lietotājam būtu vieglāk to saprast un izmantot, piemēram, iespējamās formulas pārveidojot par pogām vai drop-down listu, to pašu izdarīt arī ar iespējamjiem mainīgajiem. Visticamāk, lai programma piedāvātu tikai mainīgos, kas ir atrodami lietotāja izvēlētajā formulā, būs nepieciešams izmainīt kodu.
+
 
 
 
