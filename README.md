@@ -1,6 +1,6 @@
-# eq_solver
+### Vienādojumu atrisinātājs
 
-### Sympy ir vajadzīgs, lai strādātu!
+# Sympy un PySimpleGUI ir vajadzīgi, lai strādātu!
 Projekta mērķis ir izveidot funkciju, kura var aprēķināt jebkuru lielumu no lietotāja piedāvātas formulas un izvadīt gan algebrisko, gan skaitlisko atbildi.
 Šobrīd funkcija, kas tiek izmantota lai aprēķinātu nepieciešamo vērtību (line 19 - line 54) ir pārāk gara, lai to varētu izmantot vēl citās formulās, tāpēc mēģinu atrast veidu, kā, mainīgo vietā ievietojot lietotāja izvēlētas vērtības, varētu aprēķināt jebkuru formulu. To ir iespējams izdarīt, izmantojot Sympy funkciju 'subs', kas mainīgā vietā ievieto vērtību un aprēķina rezultātu. Kods funkcijai:
 ```py
