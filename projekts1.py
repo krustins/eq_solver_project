@@ -81,6 +81,11 @@ window4=sg.Window("Substitution", layout4).Finalize()
 window4.Maximize()
 event4, values4 = window4.read()
 
+if type(values4) != float:
+    
+    sg.Popup("The value is not a float or an integer!")
+    exit()
+           
 if event4 ==sg.WIN_CLOSED or event4 =="Cancel":
     
     window4.close()
@@ -98,7 +103,7 @@ if "sqrt" in str(solve(res, result_var)):
 
 else:
     
-    layout5 = [[sg.Text(f"{result_var} =  {str(nsolve(res, result_var, solve(res,result_var)))} {units.get(str(result_var))}")], 
+    layout5 = [[sg.Text(f"{result_var} =  {round(float(nsolve(res, result_var, solve(res,result_var))), 4)} {units.get(str(result_var))}")], 
                [sg.Button("Exit")]]
     
 window5 = sg.Window("Result",layout5).Finalize()
