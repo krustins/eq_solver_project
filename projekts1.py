@@ -10,6 +10,8 @@ functions = {"1": v*t-s, "2": (v-v0)/t -a, "3": x0+v0*t - x+ a*t**2/2, "4": v**2
 font = ("Arial", 20)
 font1 = ("Arial", 12)
 
+
+sg.theme('GreenMono')
 layout1 = [[sg.Text("Choose the function that you want to use:", font = font)],
            [sg.Button('v=s/t', key = "1", size = (20,1), font = font1), sg.Button('a = (v-v0)/t', key = "2", size = (20,1),  font = font1), sg.Button(' x = x0 + v0*t + a*t^2/2', key = "3", size = (20,1), font = font1)],
            [sg.Button('v^2-v0^2 = 2*a*s', key = "4", size = (20,1), font = font1), sg.Button('ω = φ/t', key = "5", size = (20,1), font = font1), sg.Button('v = 1/T', key = "6", size = (20,1), font = font1), sg.Button('v = 2*π*R/T', key = "7", size = (20,1), font = font1), sg.Button("v = ω*R", key = "8", size = (20,1), font = font1)],
