@@ -1,10 +1,10 @@
 from sympy import *
-from sympy.abc import a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, A, B, C, D, E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z
+from sympy.abc import a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
 import PySimpleGUI as sg
 import math
 
-v0, x0 ,ω,φ, m1, m2, Fe,   = symbols('v0 x0 ω φ m1 m2 Fe')
-vars = [Fe, m1, m2, φ, ω, v0, x0, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, A, B, C, D, E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z]
+v0, x0 ,ω ,φ ,    = symbols('v0 x0 ω φ')
+vars = [Fe, m1, m2, φ, ω, v0, x0, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z]
 units = {"s": "m", "v": "m/s", "t": "s", "v0": "m/s", "a": "m/(s^2)", "x": "m", "x0": "m", "ω": "rad/s", "φ":"rad", "m": "kg", "M": "kg", "F" :"N", "T": "s", "R": "m", "F":"N", "k" :"N/m", "G": "N*m^2/kg^2", "g": "N/m"}
 functions = {"1": v*t-s, "2": (v-v0)/t -a, "3": x0+v0*t - x+ a*t**2/2, "4": v**2-v0**2 - 2*a*s, "5": -ω+φ/t, "6": 1/T -v, "7": 2*math.pi*R/T - v, "8": ω*R - v, "9": -a + v**2/R, "10":-a + ω**2*R, "11":F/m - a, "12": G*m1*m2/r**2 - F, "13":m*g-F,"14":-k*x - Fe,}
 font = ("Arial", 20)
